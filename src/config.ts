@@ -10,12 +10,12 @@ export const siteConfig = {
   },
   aboutMe:
     "I am an experienced dev ops and software engineer who has a passion for building efficient software and also has empathy and humor to make it through the day as a team.",
-  skills: ["Git", "Github Workflows", "ArgoCD", 
+  skills: ["Linux", "Git", "Github Workflows", "ArgoCD", 
           "Kubernetes", "AWS", "GCP", "Azure", "Docker",
           "Python", "Go", "C/C++", "Java", "PHP", 
           "Javascript", "React", "Node.js",
-          "PostgreSQL",
-          "Hardware Setup"],
+          "PostgreSQL", "TimescaleDB",
+          "Hardware Setup", "PFSense", "OpenVPN"],
   projects: [
     {
       name: "Candle stick pattern analysis (coming soon)",
