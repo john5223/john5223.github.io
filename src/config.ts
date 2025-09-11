@@ -21,7 +21,7 @@ export const siteConfig = {
       name: "Candle stick pattern analysis (coming soon)",
       description:
         "Analyze candle stick patterns in the stock market to look for reliable patterns to predict future market trends.",
-      link: "https://john5223.github.io/patterns",
+      link: "/patterns",
       skills: ["Python", "Celery", "Pandas", "Numpy", "Redis", "TimescaleDB"],
     },
   ],
