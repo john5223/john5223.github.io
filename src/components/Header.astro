@@ -56,6 +56,19 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
           </li>
         )
       }
+      {
+        siteConfig.social?.cv && (
+        <li>
+          <a
+            href={siteConfig.social.cv}
+            target="_blank"
+            class="text-gray-700 hover:text-black transition-colors font-medium"
+          >
+            CV
+          </a>
+        </li>
+        )
+      }
     </ul>
   </nav>
 </header>
