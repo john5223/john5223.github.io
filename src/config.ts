@@ -11,7 +11,7 @@ export const siteConfig = {
   },
   aboutMe:
     "I am an experienced dev ops and software engineer who has a passion for building efficient software and also has empathy and humor to make it through the day as a team.",
-  skills: ["Linux", "Git", "Github Workflows (CI/CD)", "ArgoCD",
+  skills: ["Linux", "Git", "Github Workflows (CI/CD)", "ArgoCD", "Helm",
            "Ansible", "Salt",
           "Kubernetes", "AWS", "GCP", "Azure", "Docker",
           "Python", "Go", "C/C++", "Java", "PHP", 
@@ -55,10 +55,11 @@ export const siteConfig = {
       bullets: [
         "<b>Hardware:</b> PowerEdge R6515, Dell Powerswitch",
         "<b>Languages:</b> Python, Go",
-        "<b>Configuration:</b> MAAS, Kubernetes manifests, helm charts, <a style='color: blue' href='https://zarf.dev/'>Zarf</a> packages",
+        "<b>Configuration:</b> MAAS, Kubernetes manifests, Helm charts, <a target=_blank href='https://zarf.dev/'>Zarf</a> packages",
+        "<b>Tools</b>: DCO Core built on top of <a target=_blank href='https://github.com/DoD-Platform-One/bigbang'>BigBang</a>",
         "Build out deployable kits consisting of 10 PowerEdge servers clustered together using Kubernetes.",
         "Install and test offline package installation (via zarf) of network intrusion detection software which includes tools such as zeek, suricata, arkime, elasticsearch, etc into a kubernetes deployment.",
-        "Built zarf packages for deploying applications. Zarf packages are helm charts and docker images packaged together for use in offline deployments of applications within a kubernetes deployment (https://zarf.dev)",
+        "Built zarf packages for deploying applications. Zarf packages are helm charts and docker images packaged together for use in offline deployments of applications within a kubernetes deployment (<a target=_blank href='https://zarf.dev'>https://zarf.dev</a>)",
         "Setup Canonical’s MAAS software for setup of infrastructure components including Dell switches, firewall and kit servers via DHCP and PXE boot configurations.",
         "Building packer “golden” images for use by MAAS to PXE boot the servers into a RKE2 Kubernetes cluster.",
         "Automate OS10 Dell Powerswitch builds to configure the network for a deployable kit with a custom script utilizing paramiko.",
@@ -86,6 +87,7 @@ export const siteConfig = {
       dateRange: "December 2020 - December 2021",
       bullets: [
         "<b>Environment:</b> GovCloud AWS, Kubernetes",
+        "<b>Tools</b>: <a  target=_blank href='https://github.com/DoD-Platform-One/bigbang'>BigBang</a>",
         "Contractor supporting Air Forces LevelUp program to deploy Kuberneres according to DoD's DevSecOps Reference Architecture",
         "Use rke3 to deploy kubernetes, flux to deploy platform applications, and argocd to deploy customer applications.",
         "Manage AWS infrastructure via terraform and gitops.",
@@ -106,7 +108,7 @@ export const siteConfig = {
         "<b>Packet Broker:</b> Ixia xStream 40, Vision Edge 40 (E40)",
         "<b>Database:</b> Elasticsearch 6 and 7.5",
         "<b>Tools:</b> Kubernetes, Ansible, Kibana, DPDK, Moongen, Breaking Point, Verodin, Redfish API, Zeek, Suricata, Moloch",
-        "<b>References:</b> <a style='color:blue;font-weight:bold' href='/Emmerich.pdf'>(PDF) Mind the Gap – A Comparison of Software Packet Generators By Emmerich, etc.</a>",
+        "<b>References:</b> <a  target=_blank href='/Emmerich.pdf'>(PDF) Mind the Gap – A Comparison of Software Packet Generators By Emmerich, etc.</a>",
         "Contractor for Air Force Research Laboratories (AFRL) supporting CVAH program.",
         "Built out a lab of 10 deployable interceptor kits (7-10 R440 servers) for load testing.",
         "Deployed network IDS suites (Bro/Zeek, Suricata, Moloch/Arkime) deployed via kubernetes into cri-o containers.",
@@ -182,8 +184,9 @@ export const siteConfig = {
       dateRange: "2007 - 2011",
       achievements: [
         "Paid research assistant to Dr. Chen.",
-        "Co-authored research paper w/ Dr. Chen", 
-        "J. Curran, and X. Chen, 'A Minimization Problem in Wireless Sensor Networks', Proc. Of the International Conference on Parallel and Distributed Computing and Networks, February 2010."
+        "Co-authored research paper w/ Dr. Chen <br /> \
+        <a  target=_blank href='https://www.researchgate.net/publication/289643867_A_minimization_problem_in_wireless_sensor_networks'> \
+        J. Curran, and X. Chen, 'A Minimization Problem in Wireless Sensor Networks', Proc. Of the International Conference on Parallel and Distributed Computing and Networks, February 2010. </a>"
       ],
     },
   ],
