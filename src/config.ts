@@ -17,7 +17,8 @@ export const siteConfig = {
           "Python", "Go", "C/C++", "Java", "PHP", 
           "Javascript", "React", "Node.js",
           "PostgreSQL", "TimescaleDB",
-          "Hardware Setup", "PFSense", "OpenVPN"],
+          "Hardware Setup", "PFSense", "OpenVPN",
+          "Datadog", "Grafana"],
   projects: [
     {
       name: "Candle stick pattern analysis (coming soon)",
@@ -74,6 +75,8 @@ export const siteConfig = {
       dateRange: "January 2022 - July 2023",
       bullets: [
         "<b>Languages:</b> Node.js, Python, Go​",
+        "<b>Database:</b> Elasticsearch",
+        "<b>Tools:</b> Datadog",
         "Migrating monolithic ec2 application deployments into smaller microservice nomad kubernetes deployments.",
         "Managed system insight api and events for tracking os query data into jumpcloud pipelines and databases (postgres, kafka and snowflake)",
         "Debug and fix backend issues with jumpcloud python and go deployments by monitoring datadog and deployment logs",
@@ -119,8 +122,9 @@ export const siteConfig = {
         "Automated discovery of hardware via Redfish API. Integrated MAC address retrieval, setting boot order for one time PXE boot, and power control into the system for Continuous Integration pipeline.",
         "Build 10G traffic generation solution for throughput testing network analysis tools such as moloch, suricata, and Zeek (formerly Bro).",
         "On an X-710 network card we obtained 6 GB/s using tcpdump, DPDK pktgen to get 10GB/s, moongen for custom scripting of packets at 10 GB/s, and Breaking Point (paid solution) for 10GB/s of custom configurable traffic generation via a web interface.",
-        "Integrated with Verodin for malware analysis to test the accuracy of the IDS (Intrusion Detection System).", "Implemented packer brokering on IXIA Extreme 40 for load balancing traffic based on session", "Worked on Jenkins build scripts including tests, reports on bugs and fixing ansible scripts for network IDS builds", "Worked on openvpn server and client setups for remote sensor installations. Also established IPSec tunnels connected to an ASA with DNS forwarding setup for access to multiple kits across different networks.",
-        
+        "Integrated with Verodin for malware analysis to test the accuracy of the IDS (Intrusion Detection System).", "Implemented packer brokering on IXIA Extreme 40 for load balancing traffic based on session",
+        "Worked on Jenkins build scripts including tests, reports on bugs and fixing ansible scripts for network IDS builds", "Worked on openvpn server and client setups for remote sensor installations. Also established IPSec tunnels connected to an ASA with DNS forwarding setup for access to multiple kits across different networks.",
+        "Adversary emulation through Breaking Point and Verodin for testing malware detection capabilites of the kit."
       ],
     },
     {
