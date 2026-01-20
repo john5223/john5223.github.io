@@ -7,8 +7,8 @@ export const siteConfig = {
     email: "curran736@gmail.com",
     linkedin: "https://www.linkedin.com/in/john-curran-77957b39",
     github: "https://github.com/john5223",
-    cv: "/JohnCurranJr-Resume-2026.pdf"
-    cv_doc: "/JohnCurranJr-Resume-2026.docx"
+    cv: "/JohnCurranJr-Resume-2026.pdf",
+    docx: "/JohnCurranJr-Resume-2026.docx"
   },
   aboutMe:
     "I am an experienced dev ops and software engineer who has a passion for building efficient software and also has empathy and humor to make it through the day as a team.",
@@ -61,6 +61,7 @@ export const siteConfig = {
         "<b>Tools</b>: DCO Core built on top of <a target=_blank href='https://github.com/DoD-Platform-One/bigbang'>BigBang</a>",
         "Use RKE2 (Rancher) to build out deployable kits consisting of 10 PowerEdge servers clustered together using Kubernetes.",
 	"Use Helm and Flux to deploy services within Kuberenetes cluster",
+	"Build out Gitlab and Github pipelines for building packages",
         "Install and test offline package installation (via zarf) of network intrusion detection software which includes tools such as zeek, suricata, arkime, elasticsearch, etc into a kubernetes deployment.",
         "Built zarf packages for deploying applications. Zarf packages are helm charts and docker images packaged together for use in offline deployments of applications within a kubernetes deployment (<a target=_blank href='https://zarf.dev'>https://zarf.dev</a>)",
         "Setup Canonical’s MAAS software for setup of infrastructure components including Dell switches, firewall and kit servers via DHCP and PXE boot configurations.",
@@ -80,7 +81,8 @@ export const siteConfig = {
         "<b>Database:</b> Elasticsearch",
         "<b>Tools:</b> Datadog",
         "Migrating monolithic ec2 application deployments into smaller microservice nomad kubernetes deployments.",
-        "Managed system insight api and events for tracking os query data into jumpcloud pipelines and databases (postgres, kafka and snowflake)",
+	"Manage CI/CD github pipelines which deployed services.", 
+        "Manage system insight api and events for tracking os query data into jumpcloud pipelines and databases (postgres, kafka and snowflake)",
         "Debug and fix backend issues with jumpcloud python and go deployments by monitoring datadog and deployment logs",
         "On call for monitoring and fixing error rates on production deployments."
       ],
@@ -150,7 +152,7 @@ export const siteConfig = {
     {
       company: "Showroom Logic",
       title: "Senior Software Engineer",
-      dateRange: "2013 - 2017",
+      dateRange: "October 2013 - May 2017",
       bullets: [
         "<b>Languages:</b> Python, PHP",
         "<b>Environment:</b> Amazon Opsworks (Chef cookbooks), Elastic Beanstalk (docker)",
@@ -169,7 +171,7 @@ export const siteConfig = {
       company: "Rackspace",
       url: "https://www.rackspace.com/",
       title: "DevOps Engineer II / Quality Engineer (Private Cloud)",
-      dateRange: "2013 - 2017",
+      dateRange: "August 2012 - October 2013",
       bullets: [
         "<b>Languages:</b> Java, Python, Ruby",
         "<b>Environment:</b> Openstack, Chef (infrastructure management), Jenkins",
