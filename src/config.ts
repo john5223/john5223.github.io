@@ -7,7 +7,8 @@ export const siteConfig = {
     email: "curran736@gmail.com",
     linkedin: "https://www.linkedin.com/in/john-curran-77957b39",
     github: "https://github.com/john5223",
-    cv: "/JohnCurranJr-Resume-2025.pdf"
+    cv: "/JohnCurranJr-Resume-2026.pdf"
+    cv_doc: "/JohnCurranJr-Resume-2026.docx"
   },
   aboutMe:
     "I am an experienced dev ops and software engineer who has a passion for building efficient software and also has empathy and humor to make it through the day as a team.",
@@ -58,7 +59,8 @@ export const siteConfig = {
         "<b>Languages:</b> Python, Go",
         "<b>Configuration:</b> MAAS, Kubernetes manifests, Helm charts, <a target=_blank href='https://zarf.dev/'>Zarf</a> packages",
         "<b>Tools</b>: DCO Core built on top of <a target=_blank href='https://github.com/DoD-Platform-One/bigbang'>BigBang</a>",
-        "Build out deployable kits consisting of 10 PowerEdge servers clustered together using Kubernetes.",
+        "Use RKE2 (Rancher) to build out deployable kits consisting of 10 PowerEdge servers clustered together using Kubernetes.",
+	"Use Helm and Flux to deploy services within Kuberenetes cluster",
         "Install and test offline package installation (via zarf) of network intrusion detection software which includes tools such as zeek, suricata, arkime, elasticsearch, etc into a kubernetes deployment.",
         "Built zarf packages for deploying applications. Zarf packages are helm charts and docker images packaged together for use in offline deployments of applications within a kubernetes deployment (<a target=_blank href='https://zarf.dev'>https://zarf.dev</a>)",
         "Setup Canonical’s MAAS software for setup of infrastructure components including Dell switches, firewall and kit servers via DHCP and PXE boot configurations.",
@@ -92,7 +94,7 @@ export const siteConfig = {
         "<b>Environment:</b> GovCloud AWS, Kubernetes",
         "<b>Tools</b>: <a  target=_blank href='https://github.com/DoD-Platform-One/bigbang'>BigBang</a>",
         "Contractor supporting Air Forces LevelUp program to deploy Kuberneres according to DoD's DevSecOps Reference Architecture",
-        "Use rke3 to deploy kubernetes, flux to deploy platform applications, and argocd to deploy customer applications.",
+        "Use rke2 to deploy kubernetes, flux to deploy platform applications, and argocd to deploy customer applications.",
         "Manage AWS infrastructure via terraform and gitops.",
         "Work with application teams to deploy their workloads into staging, test and production clusters.",
         "Integrate CSI drivers and other platform applications into kubernetes deployments.",
