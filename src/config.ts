@@ -11,19 +11,20 @@ export const siteConfig = {
     docx: "/JohnCurranJr-Resume-2026.docx"
   },
   aboutMe:
-    "Senior platform and software engineer with 14+ years of experience building Kubernetes platforms, cloud infrastructure, CI/CD automation, and backend services. Hands-on with Python and Go across AWS, GCP, and Azure.",
+    "Senior platform and software engineer with 14+ years of experience building production Python backend services, Kubernetes platforms, cloud infrastructure, and CI/CD automation. Hands-on with Python and Go across AWS, GCP, and Azure, with networking and observability experience using OpenStack Neutron, MAAS, pfSense, Grafana, and Loki.",
   skills: [
     "Kubernetes", "AWS", "GCP", "Azure", "Docker", "Terraform",
-    "Helm", "Argo CD", "Flux", "GitHub Actions", "Git", "Ansible", "Salt", "MAAS",
+    "Helm", "Argo CD", "Flux", "GitHub Actions", "Git", "Ansible", "Salt", "MAAS", "OpenStack", "Neutron",
     "Python", "Go", "C/C++", "Java", "PHP", "JavaScript", "Node.js", "React",
-    "PostgreSQL", "TimescaleDB", "Linux", "Grafana", "Datadog", "pfSense", "OpenVPN"
+    "Flask", "Django REST Framework", "SQLAlchemy", "MySQL", "PostgreSQL", "TimescaleDB", "Redis", "Celery",
+    "Linux", "Grafana", "Loki (log aggregation and log-derived metrics)", "Datadog", "pfSense", "OpenVPN", "GitHub Copilot"
   ],
   projects: [
     {
       name: "Candlestick Pattern Analysis & Trading Reports",
       includeInResume: true,
       description:
-        "Built a Flask API and reporting app that detects candlestick patterns, scores historical outcomes, and provides symbol- and industry-level statistics. Celery workers collect market data and run parallel analyses; HTML reports combine pattern-hit charts with news and analyst ratings. Added BUY/SELL candidate review with per-symbol charts and generated order text for MetaTrader 4/5 and thinkorswim.",
+        "Built a Flask API and reporting app that detects candlestick patterns, scores historical outcomes, and provides symbol- and industry-level statistics. Celery workers use Redis to collect market data and run parallel analyses; HTML reports combine pattern-hit charts with news and analyst ratings. Added BUY/SELL candidate review with per-symbol charts and generated order text for MetaTrader 4/5 and thinkorswim.",
       link: "/patterns",
       skills: ["Python", "Go", "SQL", "Flask", "Celery", "Redis", "PostgreSQL", "TimescaleDB", "Pandas", "NumPy", "TastyTrade", "Airflow"],
     },
@@ -67,7 +68,7 @@ export const siteConfig = {
       bullets: [
         "Deployed RKE2 clusters for a lab of over 50 servers, and deployed services with Helm, Flux, and Argo CD; built GitLab/GitHub pipelines and <a target=_blank href='https://zarf.dev/'>Zarf</a> packages for offline IDS deployments.",
         "Supported DCO Core on <a target=_blank href='https://github.com/DoD-Platform-One/bigbang'>BigBang</a>; packaged Zeek, Suricata, Arkime, and Elasticsearch for disconnected environments.",
-        "Automated bare-metal provisioning with MAAS, PXE, and Packer images; integrated Dell OS10 switch configuration into Django/Celery deployment tools.",
+        "Automated bare-metal provisioning with Canonical MAAS, PXE, and Packer images; integrated Dell OS10 switch configuration into Django/Celery deployment tools.",
         "Deployed Airflow and contributed workflows for machine-learning applications detecting network-traffic anomalies.",
         "Troubleshot infrastructure and application issues across hardware, Helm charts, and Python/Go services, including a spanning-tree setup failure."
       ],
@@ -124,7 +125,7 @@ export const siteConfig = {
       dateRange: "October 2013 - May 2017",
       bullets: [
         "Built distributed ETL and scheduled tasks to aggregate Google Ads, Google Analytics, and other data into executive reports; integrated workflows with Amazon SWF.",
-        "Led Flask/Django development and built SQL reporting interfaces with Morris.js and D3.js visualizations.",
+        "Led production Flask/Django backend development using SQLAlchemy with MySQL and PostgreSQL, building services and SQL reporting interfaces with Morris.js and D3.js visualizations.",
         "Developed a distributed hosting platform for thousands of dealer websites, improving conversion through stronger quality scores; added Varnish caching, A/B testing, and SOAP/REST payment integrations.",
         "Built a campaign management platform that shifted ad spend toward top-performing campaigns using a proprietary ranking algorithm."
       ],
@@ -136,6 +137,7 @@ export const siteConfig = {
       dateRange: "August 2012 - October 2013",
       bullets: [
         "Helped establish the Private Cloud Quality Engineering team and built a Razor provisioning API to PXE boot bare-metal CentOS, Fedora, and Ubuntu systems.",
+        "Worked with OpenStack Neutron networking and IPAM, including network/subnet configuration and IP address allocation.",
         "Automated Chef/OpenStack tests through APIs, Jenkins, and Git hooks, covering database/LDAP authentication and Cinder backends including LVM and EMC.",
         "Built a Python application to visualize lab infrastructure and interact with OpenStack deployments."
       ],
