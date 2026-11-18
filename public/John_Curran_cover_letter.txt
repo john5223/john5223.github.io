@@ -1,8 +1,17 @@
-To Hiring Manager,
+Cover Letter
 
-I am an experienced dev ops and software engineer who has a a passion for building efficient software but also has empathy and humor to make it through the day as a team.
+Subject: Interest in [Role Title] — John Curran
 
-Interested in learning more about what your trying to build and if my experience can help. I have a lot of history with using celery and other python frameworks for building automated solutions for a wide variety of applications. I think I would be a good fit to your team and could help contribute from day one.
+Hello [Hiring Manager Name],
 
-Regards,
+I’m reaching out to express interest in the [Role Title] position at [Company]. I’m a senior platform and software engineer with 14+ years of experience building cloud infrastructure, Kubernetes platforms, CI/CD automation, and backend services.
+
+My experience includes deploying and operating Kubernetes environments across AWS, GCP, and Azure; automating infrastructure and delivery workflows; and developing services in Python and Go. In recent roles, I’ve supported deployments across a lab of more than 50 servers, built automation for disconnected environments, and helped modernize services and data pipelines.
+
+I’d welcome the opportunity to discuss how my background could contribute to your team. Would you be open to an interview? My resume is attached, and you can also find more about my work on GitHub: john5223.github.io 
+
+Thank you for your consideration.
+
+Best,
 John Curran
+curran736@gmail.com
