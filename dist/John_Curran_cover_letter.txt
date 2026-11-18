@@ -1,0 +1,8 @@
+To Hiring Manager,
+
+I am an experienced dev ops and software engineer who has a a passion for building efficient software but also has empathy and humor to make it through the day as a team.
+
+Interested in learning more about what your trying to build and if my experience can help. I have a lot of history with using celery and other python frameworks for building automated solutions for a wide variety of applications. I think I would be a good fit to your team and could help contribute from day one.
+
+Regards,
+John Curran

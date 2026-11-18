@@ -1,10 +1,63 @@
 @import "tailwindcss";
 
+:root {
+  --page-background: #101514;
+  --surface: #1b2522;
+  --surface-subtle: #17201e;
+  --surface-raised: #26332f;
+  --surface-hover: #30403a;
+  --border-color: #33423d;
+  --brand-green: #8fd3a9;
+  --color-gray-50: #17201e;
+  --color-gray-100: #202b27;
+  --color-gray-200: #33423d;
+  --color-gray-300: #465650;
+  --color-gray-400: #83938b;
+  --color-gray-500: #9eada6;
+  --color-gray-600: #bac6c0;
+  --color-gray-700: #d0dad4;
+  --color-gray-800: #e2eae5;
+  --color-gray-900: #f0f5f2;
+  --color-red-600: #ff9289;
+}
+
+html,
+body {
+  min-height: 100%;
+  background-color: var(--page-background);
+}
+
 body {
   font-family: 'IBM Plex Mono', monospace;
 }
 
+/* Dark equivalents for the existing light utility surfaces. */
+.bg-white {
+  background-color: var(--surface);
+}
+
+.bg-gray-900 {
+  background-color: var(--surface-raised);
+}
+
+.hover\:bg-white:hover {
+  background-color: var(--surface-hover);
+}
+
+.hover\:bg-gray-200:hover,
+.group:hover .group-hover\:bg-gray-800 {
+  background-color: var(--surface-hover);
+}
+
+.bg-white\/80 {
+  background-color: rgb(27 37 34 / 92%);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--brand-green);
+  outline-offset: 3px;
+}
 
 #experience a, #education a {
-  color: blue;
+  color: var(--brand-green);
 }

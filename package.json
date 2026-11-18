@@ -6,7 +6,13 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "resume:generate": "node scripts/generate-resume.mjs --backend=ruby",
+    "resume:generate:ruby": "node scripts/generate-resume.mjs --backend=ruby",
+    "resume:generate:python": "node scripts/generate-resume.mjs --backend=python"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",

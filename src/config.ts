@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "John Curran",
-  title: "Senior DevOps / Software Engineer",
+  title: "Senior Platform & Software Engineer",
   description: "Portfolio website of John Curran",
-  accentColor: "#135311ff",
+  accentColor: "#8fd3a9",
   social: {
     email: "curran736@gmail.com",
     linkedin: "https://www.linkedin.com/in/john-curran-77957b39",
@@ -11,34 +11,31 @@ export const siteConfig = {
     docx: "/JohnCurranJr-Resume-2026.docx"
   },
   aboutMe:
-    "I am an experienced dev ops and software engineer who has a passion for building efficient software and also has empathy and humor to make it through the day as a team.",
-  skills: ["Linux", "Git", "Github Workflows (CI/CD)", "ArgoCD", "Helm",
-           "Ansible", "Salt",
-          "Kubernetes", "AWS", "GCP", "Azure", "Docker",
-          "Python", "Go", "C/C++", "Java", "PHP", 
-          "Javascript", "React", "Node.js",
-          "PostgreSQL", "TimescaleDB",
-          "Hardware Setup", "PFSense", "OpenVPN",
-          "Datadog", "Grafana"],
+    "Senior platform and software engineer with 14+ years of experience building Kubernetes platforms, cloud infrastructure, CI/CD automation, and backend services. Hands-on with Python and Go across AWS, GCP, and Azure.",
+  skills: [
+    "Kubernetes", "AWS", "GCP", "Azure", "Docker", "Terraform",
+    "Helm", "Argo CD", "Flux", "GitHub Actions", "Git", "Ansible", "Salt", "MAAS",
+    "Python", "Go", "C/C++", "Java", "PHP", "JavaScript", "Node.js", "React",
+    "PostgreSQL", "TimescaleDB", "Linux", "Grafana", "Datadog", "pfSense", "OpenVPN"
+  ],
   projects: [
     {
-      name: "Candle stick pattern analysis (coming soon)",
+      name: "Candlestick Pattern Analysis & Trading Reports",
+      includeInResume: true,
       description:
-        "Analyze candle stick patterns in the stock market to look for reliable patterns to predict future market trends.",
+        "Built a Flask API and reporting app that detects candlestick patterns, scores historical outcomes, and provides symbol- and industry-level statistics. Celery workers collect market data and run parallel analyses; HTML reports combine pattern-hit charts with news and analyst ratings. Added BUY/SELL candidate review with per-symbol charts and generated order text for MetaTrader 4/5 and thinkorswim.",
       link: "/patterns",
-      skills: ["Python", "Celery", "Pandas", "Numpy", "Redis", "TimescaleDB"],
+      skills: ["Python", "Go", "SQL", "Flask", "Celery", "Redis", "PostgreSQL", "TimescaleDB", "Pandas", "NumPy", "TastyTrade", "Airflow"],
     },
     {
       name: "TimescaleDB vs Postgres Benchmark",
-      description: "Benchmark the performance improvements gained by using timescale db partitions with time series data. <br  /> \
-                    Brought the workload tested from <b style='color:red'>400 seconds</b> to completion \
-                    down to <b style='color:red'>11 seconds</b> to completion using partitioned timescaledb tables.",
+      description: "Reduced a tested time-series workload from 400 seconds to 11 seconds using TimescaleDB partitioning.",
       link: "https://github.com/john5223/timescale_benchmark?tab=readme-ov-file#results",
       skills: ["Python", "Celery", "TimescaleDB", "Postgres"]
     },
     {
       name: "Minas",
-      description: "Collection of thinkscripts for use with thinkorswim technical analysis platform.",
+      description: "ThinkScript studies for the thinkorswim technical analysis platform.",
       link: "https://github.com/john5223/minas",
       skills: ["ThinkorSwim"]
 
@@ -46,45 +43,45 @@ export const siteConfig = {
   ],
   experience: [
     {
+      company: "LEXSO",
+      url: "https://github.com/LEXSO-Dev",
+      title: "Platform Software Engineer",
+      dateRange: "April 2026 - November 2026",
+      bullets: [
+        "Implemented cross-service Keycloak/JWT authentication and Administrator/Operator authorization, including JWKS caching, replay protection, audit logging, trusted account linking, and admin-only provisioning.",
+        "Built a user-data service for per-user instance and site associations, integrated Gateway profile operations, and added production deployment workflows.",
+        "Delivered React admin workflows and Gateway/Registry API integrations for validated device and settings imports/exports, including metadata-rich instance ZIP exports.",
+        "Expanded Registry with device-class discovery, capability filtering, validation; implemented ONVIF PTZ status ingestion with dedicated collector and worker support.",
+        "Expanded Python service tests and GitHub Actions CI to build Docker images, run authentication/API tests, and publish coverage summaries and artifacts.",
+      ],
+    },
+    {
       company: "Red Knight",
       url: "https://red-knight.com/",
-      title: "DevSecOps Engineer - Air Force Contractor",
-      dateRange: "July 2023 - August 2025",
+      title: "Senior Systems / Software",
+      dateRange: "August 2023 - December 2025",
       hardware: ["PowerEdge R6515", "Dell Powerswitch"],
       infra: ["Kubernetes"],
       configuration: ["Helm Charts", "Zarf Packages"],
       languages: ["Python", "Go"],
       bullets: [
-        "<b>Hardware:</b> PowerEdge R6515, Dell Powerswitch",
-        "<b>Languages:</b> Python, Go",
-        "<b>Configuration:</b> MAAS, Kubernetes manifests, Helm charts, <a target=_blank href='https://zarf.dev/'>Zarf</a> packages",
-        "<b>Tools</b>: DCO Core built on top of <a target=_blank href='https://github.com/DoD-Platform-One/bigbang'>BigBang</a>",
-        "Use RKE2 (Rancher) to build out deployable kits consisting of 10 PowerEdge servers clustered together using Kubernetes.",
-	"Use Helm and Flux to deploy services within Kuberenetes cluster",
-	"Build out Gitlab and Github pipelines for building packages",
-        "Install and test offline package installation (via zarf) of network intrusion detection software which includes tools such as zeek, suricata, arkime, elasticsearch, etc into a kubernetes deployment.",
-        "Built zarf packages for deploying applications. Zarf packages are helm charts and docker images packaged together for use in offline deployments of applications within a kubernetes deployment (<a target=_blank href='https://zarf.dev'>https://zarf.dev</a>)",
-        "Setup Canonical’s MAAS software for setup of infrastructure components including Dell switches, firewall and kit servers via DHCP and PXE boot configurations.",
-        "Building packer “golden” images for use by MAAS to PXE boot the servers into a RKE2 Kubernetes cluster.",
-        "Automate OS10 Dell Powerswitch builds to configure the network for a deployable kit with a custom script utilizing paramiko.",
-        "Debug issues all the way from hardware misconfigurations to helm charts to fixing 3rd party application code by checking logs and fixing python or go code.",
-        "Fixed the automation for handling spanning tree loop when setting up switch before PFSense firewall was configured."
+        "Deployed RKE2 clusters for a lab of over 50 servers, and deployed services with Helm, Flux, and Argo CD; built GitLab/GitHub pipelines and <a target=_blank href='https://zarf.dev/'>Zarf</a> packages for offline IDS deployments.",
+        "Supported DCO Core on <a target=_blank href='https://github.com/DoD-Platform-One/bigbang'>BigBang</a>; packaged Zeek, Suricata, Arkime, and Elasticsearch for disconnected environments.",
+        "Automated bare-metal provisioning with MAAS, PXE, and Packer images; integrated Dell OS10 switch configuration into Django/Celery deployment tools.",
+        "Deployed Airflow and contributed workflows for machine-learning applications detecting network-traffic anomalies.",
+        "Troubleshot infrastructure and application issues across hardware, Helm charts, and Python/Go services, including a spanning-tree setup failure."
       ],
     },
     {
-      company: "Jumpcloud",
+      company: "JumpCloud",
       url: "https://jumpcloud.com/",
       title: "Senior Software / Data Engineer",
       dateRange: "January 2022 - July 2023",
+      pageBreakBefore: true,
       bullets: [
-        "<b>Languages:</b> Node.js, Python, Go​",
-        "<b>Database:</b> Elasticsearch",
-        "<b>Tools:</b> Datadog",
-        "Migrating monolithic ec2 application deployments into smaller microservice nomad kubernetes deployments.",
-	"Manage CI/CD github pipelines which deployed services.", 
-        "Manage system insight api and events for tracking os query data into jumpcloud pipelines and databases (postgres, kafka and snowflake)",
-        "Debug and fix backend issues with jumpcloud python and go deployments by monitoring datadog and deployment logs",
-        "On call for monitoring and fixing error rates on production deployments."
+        "Migrated monolithic EC2 deployments to microservices on Nomad and Kubernetes and managed GitHub CI/CD pipelines.",
+        "Managed System Insights APIs and osquery event pipelines into PostgreSQL, Kafka, and Snowflake.",
+        "Diagnosed Python/Go production issues using Datadog and deployment logs; participated in on-call response for service incidents."
       ],
     },
     {
@@ -93,42 +90,21 @@ export const siteConfig = {
       title: "DevSecOps Platform Engineer - Air Force Contractor",
       dateRange: "December 2020 - December 2021",
       bullets: [
-        "<b>Environment:</b> GovCloud AWS, Kubernetes",
-        "<b>Tools</b>: <a  target=_blank href='https://github.com/DoD-Platform-One/bigbang'>BigBang</a>",
-        "Contractor supporting Air Forces LevelUp program to deploy Kuberneres according to DoD's DevSecOps Reference Architecture",
-        "Use rke2 to deploy kubernetes, flux to deploy platform applications, and argocd to deploy customer applications.",
-        "Manage AWS infrastructure via terraform and gitops.",
-        "Work with application teams to deploy their workloads into staging, test and production clusters.",
-        "Integrate CSI drivers and other platform applications into kubernetes deployments.",
-        "Use SAFe Agile process to run sprint planning, retrospectives, and daily stand ups.",
+        "Supported the Air Force LevelUp program by deploying RKE2 Kubernetes platforms aligned with the DoD DevSecOps Reference Architecture using <a target=_blank href='https://github.com/DoD-Platform-One/bigbang'>BigBang</a>, Flux, and Argo CD.",
+        "Managed AWS infrastructure with Terraform and GitOps, integrated CSI drivers, and partnered with application teams to deploy across staging, test, and production clusters."
       ],
     },
     {
       company: "ManTech",
       url: "https://www.mantech.com/",
-      title: "DevOps Engineer (SME) - Air Force Contractor",
+      title: "Senior DevOps Architect",
       dateRange: "October 2018 - December 2020",
       bullets: [
-        "<b>Languages:</b> Python",
-        "<b>Servers:</b> Supermicro x8 / x10, HP DL-160, Dell R440, Dell XR2, Tracewell T-FX2",
-        "<b>Switches:</b> Cisco Catalyst, Dell S-Series",
-        "<b>Packet Broker:</b> Ixia xStream 40, Vision Edge 40 (E40)",
-        "<b>Database:</b> Elasticsearch 6 and 7.5",
-        "<b>Tools:</b> Kubernetes, Ansible, Kibana, DPDK, Moongen, Breaking Point, Verodin, Redfish API, Zeek, Suricata, Moloch",
-        "<b>References:</b> <a  target=_blank href='/Emmerich.pdf'>(PDF) Mind the Gap – A Comparison of Software Packet Generators By Emmerich, etc.</a>",
-        "Contractor for Air Force Research Laboratories (AFRL) supporting CVAH program.",
-        "Built out a lab of 10 deployable interceptor kits (7-10 R440 servers) for load testing.",
-        "Deployed network IDS suites (Bro/Zeek, Suricata, Moloch/Arkime) deployed via kubernetes into cri-o containers.",
-        "Rack and stack servers and switches.",
-        "Configured lab switches, OOB interfaces and Ixia Packet Broker network routing.",
-        "Setup labs distribution and access switches to handle routes to firewall’s (pfsense) external interfaces.",
-        "Setup custom domains for each kit and conditional DNS forwarding with dnsmasq",
-        "Automated discovery of hardware via Redfish API. Integrated MAC address retrieval, setting boot order for one time PXE boot, and power control into the system for Continuous Integration pipeline.",
-        "Build 10G traffic generation solution for throughput testing network analysis tools such as moloch, suricata, and Zeek (formerly Bro).",
-        "On an X-710 network card we obtained 6 GB/s using tcpdump, DPDK pktgen to get 10GB/s, moongen for custom scripting of packets at 10 GB/s, and Breaking Point (paid solution) for 10GB/s of custom configurable traffic generation via a web interface.",
-        "Integrated with Verodin for malware analysis to test the accuracy of the IDS (Intrusion Detection System).", "Implemented packer brokering on IXIA Extreme 40 for load balancing traffic based on session",
-        "Worked on Jenkins build scripts including tests, reports on bugs and fixing ansible scripts for network IDS builds", "Worked on openvpn server and client setups for remote sensor installations. Also established IPSec tunnels connected to an ASA with DNS forwarding setup for access to multiple kits across different networks.",
-        "Adversary emulation through Breaking Point and Verodin for testing malware detection capabilites of the kit."
+        "Supported the Air Force Research Laboratory CVAH program; built 10 deployable interceptor kits with 7–10 servers each for load testing and deployed Zeek, Suricata, and Arkime in Kubernetes/CRI-O.",
+        "Automated Redfish hardware discovery, PXE boot, and power control in CI; configured Cisco/Dell switches, out-of-band and Ixia packet-broker routing, pfSense, and per-kit DNS.",
+        "Configured OpenVPN/IPsec access for remote sensors; maintained Jenkins and Ansible build automation and tested IDS detection with Verodin/BreakingPoint.",
+        "Built a 10 Gb/s traffic-generation solution and measured 6 Gb/s packet-capture throughput with tcpdump; generated up to 10 Gb/s with DPDK Pktgen, MoonGen, and BreakingPoint.",
+        "<a target=_blank href='/Emmerich.pdf'>Reference: Mind the Gap – A Comparison of Software Packet Generators.</a>"
       ],
     },
     {
@@ -137,16 +113,9 @@ export const siteConfig = {
       title: "Senior Software Engineer",
       dateRange: "June 2017 - October 2018",
       bullets: [
-        "<b>Languages:</b> Python, Go",
-        "<b>Environment:</b> Kubernetes, Amazon EC2, GCP, Azure",
-        "Deploy and manage OpenID Connect service for SalesForce Single Sign On (SSO)",
-        "Migrate from ansible deployment to docker containers deployed into Kubernetes.",
-        "Develop reports in kibana to analyze traffic to public API for debugging",
-        "Manage the public data api, including finding and implementing solutions to geospatial and other issues in the public data api.",
-        "Migrate postgreSQL databases and other services from AWS to Google Cloud (GCP).",
-        "Worked on and fixed the cleaning up of geojson searches with too many point coordinates causing database load to reach critical state",
-        "Worked on private Azure deployments for various entities",
-        "Fixed an issue in the public API that happened when geospatial queries crossed the antimerdian."
+        "Deployed an OpenID Connect service for Salesforce SSO and migrated Ansible deployments to Docker on Kubernetes.",
+        "Migrated PostgreSQL databases and services from AWS to GCP and supported private Azure deployments.",
+        "Used Kibana traffic reports to debug the public API; improved reliability by optimizing large GeoJSON searches and fixing queries across the antimeridian."
       ],
     },
     {
@@ -154,34 +123,21 @@ export const siteConfig = {
       title: "Senior Software Engineer",
       dateRange: "October 2013 - May 2017",
       bullets: [
-        "<b>Languages:</b> Python, PHP",
-        "<b>Environment:</b> Amazon Opsworks (Chef cookbooks), Elastic Beanstalk (docker)",
-        "Architect and implement the distributed ETL workflow to aggregate reporting data from multiple 3rd parties, primarily Google Adwords and Google Analytics.",
-        "Implement a schedule of distributed tasks to generate executive reports for the business.",
-        "SQL reports and front end applications for customers and internal business requirements.",
-        "Developed web front ends for reporting systems using morris.js or d3.js charts.",
-        "Lead team to build flask and django applications.",
-        "Integrated tasks into an application that used Amazon’s SWF (Simple Workflow).",
-        "Developed a distributed hosting application for dealer websites that increased conversion rates through better quality scores and provided efficient flow of traffic for 1000s of clients.",
-        "Features included : caching with varnish, A/B testing and integration with Google Experiments, payment information integration via SOAP and REST APIs.",
-        "Build a campaign management platform that automatically adjusted ad spend to the campaigns with the highest performance according to a proprietary ranking algorithm."
+        "Built distributed ETL and scheduled tasks to aggregate Google Ads, Google Analytics, and other data into executive reports; integrated workflows with Amazon SWF.",
+        "Led Flask/Django development and built SQL reporting interfaces with Morris.js and D3.js visualizations.",
+        "Developed a distributed hosting platform for thousands of dealer websites, improving conversion through stronger quality scores; added Varnish caching, A/B testing, and SOAP/REST payment integrations.",
+        "Built a campaign management platform that shifted ad spend toward top-performing campaigns using a proprietary ranking algorithm."
       ],
     },
     {
       company: "Rackspace",
       url: "https://www.rackspace.com/",
-      title: "DevOps Engineer II / Quality Engineer (Private Cloud)",
+      title: "DevOps Engineer II / Quality Engineering",
       dateRange: "August 2012 - October 2013",
       bullets: [
-        "<b>Languages:</b> Java, Python, Ruby",
-        "<b>Environment:</b> Openstack, Chef (infrastructure management), Jenkins",
-        "<b>Team:</b> Private Cloud",
-        "Rack servers and build automated API that used Razor bare-metal provisioning software to PXE boot a pool of servers with a set distribution of Centos, Fedora and Ubuntu bare-metal instances.",
-        "Build API to pull from pool of servers and test feature sets specified.",
-        "Integrate with Jenkins to automate testing of chef cookbooks via a git hook to an API endpoint",
-        "Feature matrix included but not limited to : building cookbooks and testing authentication methods (database, LDAP, 389, OpenLDAP), cinder storage backends (LVM, EMC hardware, etc)",
-        "Integration of different testing suites for testing private cloud deployments reliability.",
-        "Built a web application in python to visualize the Rackspace Lab infrastructure and interact with multiple Openstack deployments."
+        "Helped establish the Private Cloud Quality Engineering team and built a Razor provisioning API to PXE boot bare-metal CentOS, Fedora, and Ubuntu systems.",
+        "Automated Chef/OpenStack tests through APIs, Jenkins, and Git hooks, covering database/LDAP authentication and Cinder backends including LVM and EMC.",
+        "Built a Python application to visualize lab infrastructure and interact with OpenStack deployments."
       ],
     },
   ],
@@ -189,12 +145,10 @@ export const siteConfig = {
     {
       school: "Texas State University",
       degree: "Bachelor of Science in Computer Science",
-      dateRange: "2007 - 2011",
+      dateRange: "May 2011",
       achievements: [
-        "Paid research assistant to Dr. Chen.",
-        "Co-authored research paper w/ Dr. Chen <br /> \
-        <a  target=_blank href='https://www.researchgate.net/publication/289643867_A_minimization_problem_in_wireless_sensor_networks'> \
-        J. Curran, and X. Chen, 'A Minimization Problem in Wireless Sensor Networks', Proc. Of the International Conference on Parallel and Distributed Computing and Networks, February 2010. </a>"
+        "Minor in Mathematics; received the Texas State Undergraduate Research Excellence Award (2010) and National Hispanic Scholarship (2007).",
+        "Paid research assistant to Dr. Chen; co-authored <a target=_blank href='https://www.researchgate.net/publication/289643867_A_minimization_problem_in_wireless_sensor_networks'>A Minimization Problem in Wireless Sensor Networks</a>, published at the International Conference on Parallel and Distributed Computing and Networks (2010)."
       ],
     },
   ],
