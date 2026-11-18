@@ -87,7 +87,7 @@ export const siteConfig = {
     {
       company: "BrainGu",
       url: "https://www.braingu.com/",
-      title: "DevSecOps Platform Engineer - Air Force Contractor",
+      title: "DevSecOps Platform Engineer",
       dateRange: "December 2020 - December 2021",
       bullets: [
         "Supported the Air Force LevelUp program by deploying RKE2 Kubernetes platforms aligned with the DoD DevSecOps Reference Architecture using <a target=_blank href='https://github.com/DoD-Platform-One/bigbang'>BigBang</a>, Flux, and Argo CD.",
