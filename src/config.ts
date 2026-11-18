@@ -58,7 +58,7 @@ export const siteConfig = {
     {
       company: "Red Knight",
       url: "https://red-knight.com/",
-      title: "Senior Systems / Software",
+      title: "Senior Systems / Software Engineer",
       dateRange: "August 2023 - December 2025",
       hardware: ["PowerEdge R6515", "Dell Powerswitch"],
       infra: ["Kubernetes"],
