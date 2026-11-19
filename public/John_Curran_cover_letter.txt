@@ -1,14 +1,16 @@
 Cover Letter
 
-Subject: Interest in [Role Title] — John Curran
+Subject: Software Engineer — John Curran
 
-Hello [Hiring Manager Name],
+Dear Hiring Manager,
 
-I’m reaching out to express interest in the [Role Title] position at [Company]. I’m a senior platform and software engineer with 14+ years of experience building cloud infrastructure, Kubernetes platforms, CI/CD automation, and backend services.
+I’m a senior platform and software engineer with 14+ years of experience building production software and cloud platforms. My work spans Kubernetes and infrastructure automation across AWS, GCP, and Azure, as well as Python and Go services, data pipelines, and networking.
 
-My experience includes deploying and operating Kubernetes environments across AWS, GCP, and Azure; automating infrastructure and delivery workflows; and developing services in Python and Go. In recent roles, I’ve supported deployments across a lab of more than 50 servers, built automation for disconnected environments, and helped modernize services and data pipelines.
+Most recently, I built secure service integrations and admin workflows. Previously, I deployed Kubernetes across a 50-plus-server lab and automated bare-metal provisioning and software delivery for disconnected environments. I bring practical experience across the application and infrastructure layers, from backend APIs and CI/CD to cluster operations.
 
-I’d welcome the opportunity to discuss how my background could contribute to your team. Would you be open to an interview? My resume is attached, and you can also find more about my work on GitHub: john5223.github.io 
+I also built a candlestick-pattern analysis and trading reports application using Flask, Celery, and Redis to analyze historical outcomes and surface symbol-level insights. See the project at https://john5223.github.io/patterns.
+
+I’d welcome the opportunity to discuss how I could contribute to your company. My resume is attached; you can also find my work at john5223.github.io and github.com/john5223.
 
 Thank you for your consideration.
 
